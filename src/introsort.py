@@ -1,5 +1,3 @@
-import random
-
 def introsort(lista):
     profundidade_maxima = (len(lista).bit_length() - 1) * 2
     introsort_auxiliar(lista, 0, len(lista), profundidade_maxima)
@@ -66,10 +64,3 @@ def heap_maximo(lista, indice, inicio, fim):
     if maior != indice:
         troca(lista, inicio + maior, inicio + indice)
         heap_maximo(lista, maior, inicio, fim)
-
-lista = random.sample(range(101), 100)
-lista = [int(x) for x in lista]
-introsort(lista)
-
-print('Resultado: ', end='')
-print(lista)
