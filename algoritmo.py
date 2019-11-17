@@ -8,11 +8,11 @@ def introsort_auxiliar(lista, inicio, fim, profundidade_maxima):
     elif profundidade_maxima == 0:
         heapsort(lista, inicio, fim)
     else:
-        p = particao(lista, inicio, fim)
+        p = quicksort(lista, inicio, fim)
         introsort_auxiliar(lista, inicio, p + 1, profundidade_maxima - 1)
         introsort_auxiliar(lista, p + 1, fim, profundidade_maxima - 1)
 
-def particao(lista, inicio, fim):
+def quicksort(lista, inicio, fim):
     pivo = lista[inicio]
     i = inicio - 1
     j = fim
@@ -49,6 +49,7 @@ def construcao_heap_maximo(lista, inicio, fim):
 def heap_maximo(lista, indice, inicio, fim):
     def esquerda(i):
         return 2 * i + 1
+    
     def direita(i):
         return 2 * i + 2
     
