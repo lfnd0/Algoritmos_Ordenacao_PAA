@@ -7,7 +7,7 @@ def criar_lista(tamanho, ordenacao):
         return sorted(numeros, reverse=True)
     elif ordenacao == 'C':
         return sorted(numeros)
-    elif ordenacao == 'N':
+    elif ordenacao == 'A':
         return numeros
 
 tamanho = 1000

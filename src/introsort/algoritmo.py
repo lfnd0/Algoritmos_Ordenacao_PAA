@@ -56,6 +56,7 @@ def heap_maximo(lista, indice, inicio, fim):
     tamanho = fim - inicio
     e = esquerda(indice)
     d = direita(indice)
+    
     if(e < tamanho and lista[inicio + e] > lista[inicio + indice]):
         maior = e
     else:
