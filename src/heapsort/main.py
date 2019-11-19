@@ -1,5 +1,5 @@
 import random
-from algoritmo import heapSort
+from heapsort import heapsort
 
 def criar_lista(tamanho, ordenacao):
     numeros = [random.randrange(tamanho) for x in range(tamanho)]
@@ -18,6 +18,6 @@ print("Lista gerada: ")
 print(lista)
 
 lista = [int(x) for x in lista]
-heapSort(lista)
+heapsort(lista)
 print("Lista ordenada: ")
 print(lista)
