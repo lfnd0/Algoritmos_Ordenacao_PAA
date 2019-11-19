@@ -1,5 +1,5 @@
 import random
-from algoritmo import quicksort
+from quicksort import quicksort
 
 def criar_lista(tamanho, ordenacao):
     numeros = [random.randrange(tamanho) for x in range(tamanho)]
