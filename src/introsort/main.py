@@ -1,5 +1,5 @@
 import random
-from algoritmo import introsort
+from introsort import introsort
 
 def criar_lista(tamanho, ordenacao):
     numeros = [random.randrange(tamanho) for x in range(tamanho)]
