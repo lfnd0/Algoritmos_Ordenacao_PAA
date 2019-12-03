@@ -1,1 +1,1 @@
-# IntroSort
+# QuickSort, HeapSort e IntroSort
