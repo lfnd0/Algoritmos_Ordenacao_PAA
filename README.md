@@ -1,1 +1,1 @@
-# QuickSort, HeapSort e IntroSort
+# Algortimos de ordenação
